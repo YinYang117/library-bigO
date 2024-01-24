@@ -27,10 +27,12 @@ class Library {
 
     sortBooksByISBN() {
         // Implement: Sort books based off isbn
+        // Hint, you can use .sort((thingA, thingB) => thingA - thingB)
     }
 
     sortBooksByAuthor() {
-        // Implement: Sort books based off isbn
+        // Implement: Sort books based off Author
+        // Hint, you can use .sort((thingA, thingB) => thingA - thingB)
     }
 
     sortBooksComplexity() {
