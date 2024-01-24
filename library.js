@@ -1,8 +1,8 @@
 let constant = "O(1)";
 let linear = "O(n)";
 let quadratic = "O(n^2)";
-let log = "O(log n)"
-let logn = "O(n log n)"
+let logn = "O(log n)"
+let nlogn = "O(n log n)"
 
 class Library {
     constructor() {
@@ -36,7 +36,7 @@ class Library {
     }
 
     sortBooksComplexity() {
-        // return `Time Complexity: ${}, Space Complexity: ${}`
+        // return `Time Complexity: ${see variables}, Space Complexity: ${at top of file}`
     }
 
     listBooks() {
@@ -45,9 +45,8 @@ class Library {
 
     listBooksComplexity() {
         // return `Time Complexity: ${}, Space Complexity: ${}`
-
     }
-    // Additional methods for Part 3
+    
 }
 
 export default Library;
