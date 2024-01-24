@@ -30,4 +30,8 @@ This exercise will help you understand the concepts of time and space complexity
     - npm test
 - There would be more code required to make this command work
     - mocha
-- The reason 'mocha' wont work at the moment is we've specified our project to treat .js files as ES Modules. We did this 
+- The reason 'mocha' wont work at the moment is we've specified our project to treat .js files as ES Modules. We did this to allow using Import statements instead of require(). 
+- This is necessary for the most recent version of Chai exports. 
+- When we run our tests using npm test, it respects this configuration because npm uses the settings defined in package.json. 
+- However, when you directly run mocha from the command line, its not automatically detecting that our project is using ES Modules. This is the latest lead on issues with mocha and recognizing the ES Module syntax. 
+    - Namely, the import statements, describe, it, and before functions.
