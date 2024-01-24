@@ -24,3 +24,10 @@ This exercise will help you understand the concepts of time and space complexity
 - Comment your code to explain your implementation and choices.
 - Think about the time and space complexity when choosing how to implement each functionality.
 - Write clean, readable code, keeping best practices in mind.
+
+## Testing
+- While using the latest versions of Mocha and chai, the tests run with the command
+    - npm test
+- There would be more code required to make this command work
+    - mocha
+- The reason 'mocha' wont work at the moment is we've specified our project to treat .js files as ES Modules. We did this 
