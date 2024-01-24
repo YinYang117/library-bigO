@@ -11,14 +11,8 @@ This exercise will help you understand the concepts of time and space complexity
 1. **Create a Book Class**: Each book should have a title, author, and a unique ISBN number.
 2. **Implement a Library Class**: This class manages an array of Book instances. It should have methods to add a book, search for a book by title, and list all books.
 
-### Part 2: Optimization
-1. **Optimize Search**: Improve the search method's time complexity. Consider different data structures or algorithms.
-2. **Analyze Time Complexity**: For each method in your Library class, determine the time complexity in Big O notation.
-
-### Part 3: Advanced Challenges
-1. **Space Complexity**: Discuss the space complexity of your Library class. How can it be optimized?
-2. **Duplicates**: Modify your Library class to handle duplicate ISBNs gracefully.
-3. **Sorting**: Implement a method to list all books sorted by title.
+### Part 2: Complexities
+1. **Create duplicate methods that return strings**: Each of these methods will return a string with a particular format. These strings will include your guesses at the time and space complexities. Don't look in the test specs for these until after you've given it a shot.
 
 ## Guidelines
 - Comment your code to explain your implementation and choices.
