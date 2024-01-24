@@ -8,7 +8,7 @@
     "test": "mocha"
   },
   "scripts": {
-    "test": "mocha --experimental-loader ts-node/esm"
+    "test": "mocha"
   },
   "keywords": [],
   "author": "",
