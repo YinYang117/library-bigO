@@ -1,4 +1,5 @@
-import { describe, it, before } from 'mocha';
+import * as mocha from 'mocha';
+const { describe, beforeEach, it } = mocha;
 import { expect } from 'chai';
 
 import Book from '../book.js';
