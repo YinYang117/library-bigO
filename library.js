@@ -25,6 +25,18 @@ class Library {
         // return `Time Complexity: ${}, Space Complexity: ${}`
     }
 
+    sortBooksByISBN() {
+        // Implement: Sort books based off isbn
+    }
+
+    sortBooksByAuthor() {
+        // Implement: Sort books based off isbn
+    }
+
+    sortBooksComplexity() {
+        // return `Time Complexity: ${}, Space Complexity: ${}`
+    }
+
     listBooks() {
         // Implement: List all books in the library
     }

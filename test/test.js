@@ -44,6 +44,29 @@ describe('Book Library System', function() {
             library.addBook(book2);
             expect(library.listBooks()).to.deep.equal([book1, book2]);
         })
+
+        it('should sort all books in the library by ISBN numbers', function() {
+            const book1 = new Book('First Book', 'First Author', '111111');
+            const book2 = new Book('Second Book', 'Second Author', '222222');
+            const book3 = new Book('A Third Book', 'A Third Author', '333333');
+            library.addBook(book3);
+            library.addBook(book1);
+            library.addBook(book2);
+            library.sortBooksByISBN()
+            expect(library.books).to.deep.equal([book1, book2, book3]);
+        })
+
+        it('should sort all books in the library by Author', function() {
+            const book1 = new Book('First Book', 'First Author', '111111');
+            const book2 = new Book('Second Book', 'Second Author', '222222');
+            const book3 = new Book('A Third Book', 'A Third Author', '333333');
+            library.addBook(book1);
+            library.addBook(book2);
+            library.addBook(book3);
+            library.sortBooksByAuthor()
+            expect(library.books).to.deep.equal([book3, book1, book2]);
+        })
+
     })
 
     function testComplexityEstimation(actualComplexity, expectedComplexity) {
@@ -57,21 +80,21 @@ describe('Book Library System', function() {
             library = new Library();
         });
 
-        it('should correctly estimate the complexity of adding a book', function() {
+        it('should return a str of the complexities of adding a book', function() {
             const expectedComplexity = "Time Complexity: O(1), Space Complexity: O(1)"
             const studentComplexity = library.addBookComplexity()
             const result = testComplexityEstimation(studentComplexity, expectedComplexity)
             expect(result).to.be.true
         });
 
-        it('should correctly estimate the complexity of searching a book by title', function() {
+        it('should return a str of the complexities of searching a book by title', function() {
             const expectedComplexity = "Time Complexity: O(1), Space Complexity: O(n)"
             const studentComplexity = library.searchByTitleComplexity()
             const result = testComplexityEstimation(studentComplexity, expectedComplexity)
             expect(result).to.be.true
         });
 
-        it('should correctly estimate the complexity of sorting books', function() {
+        it('should return a str of the complexities of sorting books', function() {
             const expectedComplexity = "Time Complexity: O(n log n), Space Complexity: O(n)"
             const studentComplexity = library.sortBooksComplexity()
             const result = testComplexityEstimation(studentComplexity, expectedComplexity)
