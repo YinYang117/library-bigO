@@ -43,8 +43,21 @@ describe('Book Library System', function() {
             library.addBook(book2);
             expect(library.listBooks()).to.deep.equal([book1, book2]);
         });
+    });
 
-        // Additional tests for Part 3 (Advanced Challenges)
+    describe('Complexity Estimations', function() {
+        it('should correctly estimate the complexity of adding a book', function() {
+            expect(Library.addBookComplexity()).to.equal("Time Complexity: O(1), Space Complexity: O(n)");
+        });
+
+        it('should correctly estimate the complexity of searching a book by title', function() {
+            expect(Library.searchByTitleComplexity()).to.equal("Time Complexity: O(n), Space Complexity: O(1)");
+        });
+
+        it('should correctly estimate the complexity of sorting books', function() {
+            expect(Library.sortBooksComplexity()).to.equal("Time Complexity: O(n log n), Space Complexity: O(n)");
+        });
+
     });
 });
 
